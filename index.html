@@ -15,62 +15,62 @@
 <body>
     <!-- Header for the website alongside its navbar. -->
     <header class="header">
-        <a href="#" class="logo"><img src="/images/logoHeader.png" height="80px"></a>
-
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-
-        </nav>
+        <div class="container header-container">
+            <a href="#" class="logo"><img src="./images/logoHeader.png" height="80px" alt="Logo"></a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Home section of the website -->
     
     <div class="home">
-        <div class="home-row">
-            <div class="homecontent">
-                <h1>Hi, I'm Ash Kay</h1>
-                <h3>a Frontend Web Developer</h3>
-                <p>with a passion for interactive web applications to make your experience on the web better.</p>
+        <div class="container">
+            <div class="home-content">
+                <div class="homecontent">
+                    <h1>Hi, I'm Ash Kay</h1>
+                    <h3>a Frontend Web Developer</h3>
+                    <p>Passionate about interactive web applications.</p>
+                </div>
+                <div class="photoMe">
+                    <img src="https://api.dicebear.com/6.x/lorelei/svg?seed=Peanut" alt="avatar" />
+                </div>
             </div>
-
-            <div class="photoMe">
-                <img
-                src="https://api.dicebear.com/6.x/lorelei/svg?seed=Peanut"
-                alt="avatar" />
-            </div>
-        </div>   
+        </div>
     </div>
 
-    <section class="about">
-        <div class="aboutContainer">
+    <section class="about visible">
+        <div class="container">
             <div class="aboutTitle">
                 <h2>About Me</h2>
             </div>
+            <div class="about-content">
                 <div class="aboutcontent">
-                    <h3> Get to Know Me</h3>
+                    <h3>Get to Know Me</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo inventore vitae ad quas dignissimos, quasi enim quos soluta! Perspiciatis laudantium voluptatum eaque quam quis incidunt iusto culpa optio dolorum! Adipisci quae a obcaecati necessitatibus, harum tempora beatae fugit velit nesciunt dolore neque recusandae sint numquam aut accusamus? Facilis mollitia odio distinctio iusto commodi nulla, eligendi laborum quis nemo quos libero consequatur, ut possimus expedita, rerum voluptatibus doloremque? Perspiciatis fugit quod fuga enim velit quasi odio dolor dolore iste aliquam accusamus quae impedit non ea dolorum, cupiditate architecto tempore omnis laborum. At pariatur, eius voluptas rem tempora obcaecati dolorem omnis? Accusantium.
                     </p>
                 </div>
-                <div class="skillscontent">    
+                <div class="skillscontent">
                     <h3 class="myskillsh3">My Skills</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo inventore vitae ad quas dignissimos, quasi enim quos soluta! Perspiciatis laudantium voluptatum eaque quam quis incidunt iusto culpa optio dolorum! Adipisci quae a obcaecati necessitatibus, harum tempora beatae fugit velit nesciunt dolore neque recusandae sint numquam aut accusamus? Facilis mollitia odio distinctio iusto commodi nulla, eligendi laborum quis nemo quos libero consequatur, ut possimus expedita, rerum voluptatibus doloremque? Perspiciatis fugit quod fuga enim velit quasi odio dolor dolore iste aliquam accusamus quae impedit non ea dolorum, cupiditate architecto tempore omnis laborum. At pariatur, eius voluptas rem tempora obcaecati dolorem omnis? Accusantium. 
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo inventore vitae ad quas dignissimos, quasi enim quos soluta! Perspiciatis laudantium voluptatum eaque quam quis incidunt iusto culpa optio dolorum! Adipisci quae a obcaecati necessitatibus, harum tempora beatae fugit velit nesciunt dolore neque recusandae sint numquam aut accusamus? Facilis mollitia odio distinctio iusto commodi nulla, eligendi laborum quis nemo quos libero consequatur, ut possimus expedita, rerum voluptatibus doloremque? Perspiciatis fugit quod fuga enim velit quasi odio dolor dolore iste aliquam accusamus quae impedit non ea dolorum, cupiditate architecto tempore omnis laborum. At pariatur, eius voluptas rem tempora obcaecati dolorem omnis? Accusantium.
+                    </p>
                 </div>
-                <div class="skillLogoPhotos">
-                    <div class="skillLogos">
-                        <i class='bx bxl-html5'></i>
-                        <i class='bx bxl-css3' ></i>
-                        <i class='bx bxl-javascript' ></i>
-                        <i class='bx bxl-react' ></i>
-                        <i class='bx bxl-bootstrap' ></i>
-                    </div>
+            </div>
+            <div class="skillLogoPhotos">
+                <div class="skillLogos">
+                    <i class='bx bxl-html5'></i>
+                    <i class='bx bxl-css3'></i>
+                    <i class='bx bxl-javascript'></i>
+                    <i class='bx bxl-react'></i>
+                    <i class='bx bxl-bootstrap'></i>
                 </div>
+            </div>
         </div>
-    
     </section>
 
     <div id="contactFormOverlay">
