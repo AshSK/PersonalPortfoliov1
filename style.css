@@ -47,6 +47,7 @@ body {
     align-items: center;
 }
 
+
 .navbar a {
     font-size: 18px;
     color: #FFFFFF;
@@ -65,53 +66,81 @@ body {
 }
 
 .home {
-    height: 100vh;
-    padding: 300px 5%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding: 0 20px;
+}
+
+.homecontent {
+    flex-basis: 100%;
+    max-width: 600px;
+    padding-right: 20px;
 }
 
 .home-row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.homecontent {
-    flex-basis: 50%;
-    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .homecontent h1 {
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
+    color: #1e3a60;
+    margin-bottom: 10px;
 }
 
 .homecontent h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #1e3a60;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .homecontent p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #FAf5EF;
+    margin-bottom: 30px;
 }
 
 .photoMe {
-    flex-basis: 40%;
+    max-width: 500px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .photoMe img {
     width: 100%;
-    height: 500px;
+    max-width: 400px;
 }
 
 .about {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    pad: 0 10%;
-    justify-content: center;
+    padding: 100px 0;
+    color: #1e3a60;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .aboutContainer {
@@ -124,21 +153,21 @@ body {
     margin: 12% 0 0 0;
 }
 
-.aboutTitle {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    z-index: 5;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
+.about-title {
+    text-align: center;
+    margin-bottom: 50px;
 }
+
 
 .aboutTitle h2 {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     border-bottom: 1px solid #1e3a60;
+    color: #1e3a60; 
+    display: inline-block; 
+    padding: 0 20px; 
+    margin-top: 20px;
 }
 
 .aboutContainer h3 {
@@ -147,13 +176,12 @@ body {
     font-size: 32px;
     font-weight: 700;
     color: #1e3a60;
-    margin-bottom: 15px;
-
 }
 
-.aboutcontent {
-    max-width: 50%;
-
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutContainer p {
@@ -161,12 +189,48 @@ body {
     margin-bottom: 30px;
     margin-right: 10px;
     text-align: center;
-    
 }
 
+.aboutcontent,
 .skillscontent {
-    max-width: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
+.skillscontent h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e3a60;
+    margin-bottom: 15px;
+}
+
+.aboutcontent h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e3a60;
+    margin-bottom: 15px;
+}
+
+.aboutcontent p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000000; 
+}
+
+.skillscontent p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #000000; 
+}
+
+.skillLogos {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skillLogoPhotos {
@@ -174,6 +238,10 @@ body {
     width: 97%;
     display: flex;
     justify-content: space-between;
+    background-color: #5595f5; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .skillLogoPhotos .skillLogos {
@@ -265,7 +333,6 @@ input[type="submit"]:hover {
 
 .footer {
     display: flex;
-    position: sticky;
     top: 100%;
     background: #1e3a60;
     height: 100px;
