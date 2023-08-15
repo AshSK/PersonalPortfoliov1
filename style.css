@@ -260,57 +260,51 @@ body {
     text-shadow: 1px 1px 3px #1e3a60;
 }
 
+/* Center the form vertically and horizontally */
 #contactFormOverlay {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    margin: 10% 0 0 0;
+    align-items: center;
+    height: 100vh; /* Use the full viewport height */
 }
 
 .contactForm {
-    max-width: 550px;
+    max-width: 450px;
     width: 90%;
-    margin: 20vh auto 100px auto;
     padding: 40px;
     border-radius: 8px;
+    background-color: #FAf5EF; /* Light background color */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
 .contactForm h2 {
-    font-size: 42px;
+    font-size: 30px; /* Slightly reduce font size */
     font-weight: 700;
-    line-height: 1.2;
-    border-bottom: 1px solid #1e3a60;
+    margin-bottom: 20px;
     text-align: center;
+    color: #1e3a60;
 }
 
 label {
-    display: block;
-    margin: 20px 0;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px; /* Increase margin to add spacing between fields */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px;
     outline: none;
-    resize: none;
-    border: none;
-    border-bottom: 1px solid #1e3a60;
-    border-radius: 8px;
+    transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, textarea:focus {
-    border-bottom: 1px solid #4b91f1;
-}
-
-textarea::-webkit-scrollbar {
-    width: 4px;
-}
-
-textarea::-webkit-scrollbar-thumb {
-    background-color: #4b91f1;
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #4b91f1; /* Update border color on focus */
 }
 
 .formCenter {
@@ -318,17 +312,24 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 input[type="submit"] {
-    margin-top: 30px;
-    width: 90%;
-    max-width: 200px;
     background: linear-gradient(to right, #1e3a60, #4b91f1, #1e3a60);
     color: white;
-    font-size: 17px;
-    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 20px; /* Adjust padding for button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 input[type="submit"]:hover {
-    box-shadow: 1px 1px #1e3a60;
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
 }
 
 .footer {
